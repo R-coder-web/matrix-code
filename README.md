@@ -1,1 +1,25 @@
-# matrix-code
+#include <stdio.h>
+#include <stdio.h>
+int main(){
+    int row,col,matrix[100][100];
+    printf("row number: ");
+    scanf("%d",&row);
+    printf("col number: ");
+    scanf("%d",&col);
+    for(int i=0;i<row;i++){
+   for(int j=0;j<col;j++){
+            printf("matrix %d %d: ",i,j);
+            scanf("%d",&matrix[i][j]);
+        }
+    }
+     for(int i=0;i<row;i++){
+        for(int j=0;j<col;j++){
+            printf("  %d  ",matrix [i][j]);
+        
+        if(j==col-1){
+            printf("\n\n");
+        }
+        }
+     }
+        return 0;
+}# matrix-code
